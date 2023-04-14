@@ -11,6 +11,7 @@ public class GlobalConstants {
 	public static String JAVA_VERSION = System.getProperty("java.version");
 	public static String UPLOAD_FILE = PROJECT_PATH + File.separator + "uploadFiles" + File.separator;
 	public static String USER_PAGE_URL = "https://demo.guru99.com/";
+	public static String USER_ADMIN_URL = "https://demo.guru99.com/v4/";
 
 	public static String BROWSER_USERNAME = "kiml_Sd5AOR";
 	public static String AUTOMATE_KEY = "pxpXLpkwUXKmA4Bnqrvt";

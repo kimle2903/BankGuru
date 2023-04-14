@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageUIs.BasePageUI;
+
 public class BasePage {
 	WebDriver driver;
 
@@ -228,9 +230,7 @@ public class BasePage {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
 		List<WebElement> allItem = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childXpath)));
-		System.out.println("Size: " + allItem.size());
 		for (WebElement webElement : allItem) {
-
 			if (webElement.getText().trim().equals(expectedTextItem)) {
 				jsExecutor.executeScript("arguments[0].scrollIntoView();", webElement);
 				sleepInSecond(1);
@@ -545,5 +545,10 @@ public class BasePage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void openPageAtSizeBarByName(String namePage) {
+		waitForElementClickable(BasePageUI.MENU_SIZEBAR_BY_NAME, namePage);
+		clickToElement(BasePageUI.MENU_SIZEBAR_BY_NAME, namePage);
 	}
 }
