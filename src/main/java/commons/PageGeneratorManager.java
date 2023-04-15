@@ -3,11 +3,16 @@ package commons;
 import org.openqa.selenium.WebDriver;
 
 import pageObjects.DeleteCustomerPageObject;
+import pageObjects.DepositPageObject;
+import pageObjects.EditAccountPageObject;
 import pageObjects.EditCustomerPageObject;
+import pageObjects.FundTransferPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
+import pageObjects.NewAccountPageObject;
 import pageObjects.NewCustomerPageObject;
 import pageObjects.RegisterPageObject;
+import pageObjects.WithDrawalPageObject;
 
 public class PageGeneratorManager {
 	public static RegisterPageObject getRegisterPO(WebDriver driver) {
@@ -32,5 +37,25 @@ public class PageGeneratorManager {
 
 	public static DeleteCustomerPageObject getDeleteCustomerPO(WebDriver driver) {
 		return new DeleteCustomerPageObject(driver);
+	}
+
+	public static NewAccountPageObject getNewAccountPO(WebDriver driver) {
+		return new NewAccountPageObject(driver);
+	}
+
+	public static EditAccountPageObject getEditAccountPO(WebDriver driver) {
+		return new EditAccountPageObject(driver);
+	}
+
+	public static DepositPageObject getDepositPO(WebDriver driver) {
+		return new DepositPageObject(driver);
+	}
+
+	public static WithDrawalPageObject getWithDrawalPO(WebDriver driver) {
+		return new WithDrawalPageObject(driver);
+	}
+
+	public static FundTransferPageObject getFundTransferPO(WebDriver driver) {
+		return new FundTransferPageObject(driver);
 	}
 }
