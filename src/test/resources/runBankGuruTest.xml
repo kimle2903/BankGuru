@@ -14,8 +14,9 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.bankguru.commons.Register" />
-			<class name="com.bankguru.customer.New_Customer_01" />
 			<class name="com.bankguru.customer.New_Customer_02" />
+			<class name="com.bankguru.customer.Edit_Customer_01" />
+			<class name="com.bankguru.customer.Edit_Customer_02" />
 		</classes>
 	</test>
 

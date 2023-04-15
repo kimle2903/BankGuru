@@ -83,10 +83,10 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_03_Name_Has_Special_Characters(Method method) {
+	public void New_Customer_03_Name_Have_Special_Characters(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with customer name has special characters");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with customer name have special characters");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter to customer name is 'test@!23' to textbox");
 		newCustomerPage.enterToCustomerName("test@!23");
 
@@ -99,10 +99,10 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_04_Name_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_04_Name_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with customer name has first characters as blank space");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with customer name have first characters as blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter to customer name is ' test' to textbox");
 		newCustomerPage.enterToCustomerName(" test");
 
@@ -131,10 +131,10 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_06_Address_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_06_Address_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with address has first characters as blank space");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with address have first characters as blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter to address is ' Ha noi' textbox");
 		newCustomerPage.enterToAddressTextarea(" Ha noi");
 
@@ -179,10 +179,10 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_09_City_Has_Special_Characters(Method method) {
+	public void New_Customer_09_City_Have_Special_Characters(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with city has special characters");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with city have special characters");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter city is 'hanoi @@' to textbox");
 		newCustomerPage.enterToCityTextBox("hanoi @@");
 
@@ -195,10 +195,10 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_10_City_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_10_City_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with city has first characters as blank space");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with city have first characters as blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter city is ' Ha noi' to textbox");
 		newCustomerPage.enterToCityTextBox(" Ha noi");
 
@@ -243,7 +243,7 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_13_State_Has_Special_Characters(Method method) {
+	public void New_Customer_13_State_Have_Special_Characters(Method method) {
 		newCustomerPage.refreshToPage();
 
 		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with state has special chracters");
@@ -259,7 +259,7 @@ public class New_Customer_01 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_14_State_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_14_State_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
 		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with state empty");

@@ -107,10 +107,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_18_Pin_Has_Special_Characters(Method method) {
+	public void New_Customer_18_Pin_Have_Special_Characters(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with pin has special characters");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with pin have special characters");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter pin is '12345@' to textbox");
 		newCustomerPage.enterToPinTextBox("12345@");
 
@@ -123,10 +123,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_19_Pin_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_19_Pin_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with pin is numeric");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with pin have first characters as blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter pin is ' 12345' to textbox");
 		newCustomerPage.enterToPinTextBox(" 12345");
 
@@ -139,10 +139,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_20_Pin_Has_Blank_Space(Method method) {
+	public void New_Customer_20_Pin_Have_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with pin is numeric");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with pin have blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter pin is '1234 5' to textbox");
 		newCustomerPage.enterToPinTextBox("1234 5");
 
@@ -171,10 +171,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_22_Phone_Has_Special_Characters(Method method) {
+	public void New_Customer_22_Phone_Have_Special_Characters(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with phone has special characters");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with phone have special characters");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter phone is '03466589@' to textbox");
 		newCustomerPage.enterToPhoneTextBox("03466589@");
 
@@ -187,10 +187,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_23_Phone_Has_Blank_Space(Method method) {
+	public void New_Customer_23_Phone_Have_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with has blank space");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with phone have blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter phone is '034 886 9888' to textbox");
 		newCustomerPage.enterToPhoneTextBox("034 886 9888");
 
@@ -203,10 +203,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_24_Phone_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_24_Phone_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with phone has first characters as blank space");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with phone have first characters as blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter phone is ' 0348858888' to textbox");
 		newCustomerPage.enterToPhoneTextBox(" 0348858888");
 
@@ -251,10 +251,10 @@ public class New_Customer_02 extends BaseTest {
 	}
 
 	@Test
-	public void New_Customer_27_Email_Has_First_Characters_As_Blank_Space(Method method) {
+	public void New_Customer_27_Email_Have_First_Characters_As_Blank_Space(Method method) {
 		newCustomerPage.refreshToPage();
 
-		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with email has first character as blank space");
+		ExtentTestManager.startTest(method.getName(), browserName + "- New Customer with email have first character as blank space");
 		ExtentTestManager.getTest().log(Status.INFO, browserName + "-  New Customer - Step 01: Enter email is ' bankguru@gmail.com' to textbox");
 		newCustomerPage.enterToEmailTextBox(" bankguru@gmail.com");
 
@@ -295,6 +295,7 @@ public class New_Customer_02 extends BaseTest {
 		Assert.assertEquals(newCustomerPage.getEmailAfterNewSuccess(), email);
 
 		customerID = newCustomerPage.getCustomerID();
+		System.out.println(customerID);
 
 	}
 
